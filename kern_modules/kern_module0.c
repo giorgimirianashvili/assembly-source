@@ -11,5 +11,5 @@ static void init_module_exit(void){ // exit function
 }
 
 
-module_init(init_module);
-module_exit(init_module_exit);
+module_init(init_module); // load init_module() on the load
+module_exit(init_module_exit); // load init_module_exit(void) on the exit

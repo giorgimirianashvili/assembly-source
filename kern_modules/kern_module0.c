@@ -2,7 +2,7 @@
 #include <linux/kernel.h>
 
 static int init_module(){
-	printk(KERN_ALERT "Loaded! Hello World! \n");
+	printk(KERN_ALERT "Loaded!\n");
 	return 0;
 }
 static void init_module_exit(void){

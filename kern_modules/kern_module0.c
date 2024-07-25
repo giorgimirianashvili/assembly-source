@@ -2,11 +2,12 @@
 #include <linux/kernel.h>
 
 static int init_module(){
-	printk(KERN_ALERT "Loaded!\n");
-	return 0;
+	int return_value = 0;
+	int return_value_if_error = 1;
+	return return_value;
 }
 static void init_module_exit(void){
-	printk(KERN_ALERT "Exitted!\n");
+	printk(KERN_ALERT "Edit text\n");
 }
 
 module_init(init_module);
